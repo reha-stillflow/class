@@ -11,7 +11,7 @@ export default siteConfig({
   // basic site info (required)
   name: 'Still Flow Class',
   domain: 'class.stillflow.net',
-  author: 'Reha,
+  author: 'Reha',
 
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
