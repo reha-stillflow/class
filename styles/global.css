@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Noto+Sans+KR:wght@400;500;700&family=Quicksand:wght@400;500;600&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -15,11 +17,15 @@ html {
 
 body {
   --notion-font:
-    ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Quicksand', 'Noto Sans KR', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
     'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
     'Helvetica Neue', 'Noto Sans', sans-serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6, .notion-title {
+    font-family: 'Quicksand', 'Gowun Dodum', sans-serif !important;
 }
 
 .static-tweet blockquote {
