@@ -139,8 +139,8 @@ h2, h3, h4, .notion-h2, .notion-h3, .notion-h4 {
 
 /* 목차 개별 항목 디자인 */
 .notion-table-of-contents-item {
-    font-size: 14.5px !important; /* 본문보다 한 단계 작은 글씨 크기 */
-    line-height: 1.8 !important; /* 항목 간 시원한 줄간격 */
+    font-size: 13px !important; /* 본문보다 한 단계 작은 글씨 크기 */
+    line-height: 1.5 !important; /* 항목 간 줄간격 */
     padding-top: 6px !important;
     padding-bottom: 6px !important;
 }
