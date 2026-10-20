@@ -129,3 +129,32 @@ h2, h3, h4, .notion-h2, .notion-h3, .notion-h4 {
     transform: translateY(-4px) !important; 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important; 
 }
+/* 7. 목차(Table of Contents) 디자인: 은은한 배경과 맑은 라이트 블루 포인트 */
+.notion-table-of-contents {
+    background-color: #F7FAFC !important; /* 본문과 부드럽게 분리되는 아주 연한 쿨그레이 */
+    border-radius: 12px !important; /* 둥근 카드 모서리 */
+    padding: 24px !important; /* 넉넉한 내부 여백 */
+    border: none !important; 
+}
+
+/* 목차 개별 항목 디자인 */
+.notion-table-of-contents-item {
+    font-size: 14.5px !important; /* 본문보다 한 단계 작은 글씨 크기 */
+    line-height: 1.8 !important; /* 항목 간 시원한 줄간격 */
+    padding-top: 6px !important;
+    padding-bottom: 6px !important;
+}
+
+/* 목차 평상시 글자 색상 및 밑줄 제거 */
+.notion-table-of-contents-item-body {
+    color: #4A5568 !important; /* 차분한 미드 그레이 */
+    border-bottom: none !important; /* 기본 밑줄 제거 */
+    transition: color 0.2s ease-in-out !important;
+}
+
+/* 마우스를 올렸을 때 및 현재 활성화(읽고 있는) 항목: 맑은 라이트 블루 */
+.notion-table-of-contents-item-body:hover,
+.notion-table-of-contents-active-item .notion-table-of-contents-item-body {
+    color: #2383E2 !important; /* 캡처에 보이는 맑고 청량한 라이트 블루 */
+    font-weight: 600 !important;
+}
