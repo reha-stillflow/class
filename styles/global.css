@@ -66,14 +66,16 @@ h1, h2, h3, h4, h5, h6, .notion-title {
   background-color: var(--bg-color);
 }
 /* =========================================================
-   [스틸플로우 맞춤] 노션 별관 강의실 디자인 업그레이드 (최종)
+   [스틸플로우 맞춤] 노션 별관 강의실 디자인 업그레이드 (최종 수정)
    ========================================================= */
 
-/* 1. 표(Table) 가로 폭 80% 쫙 펴기 & 넉넉한 여백 */
+/* 1. 표(Table) 가로 폭 100% 복구 & 상하 여백 시원하게 */
 .notion-simple-table-wrapper {
     width: 100% !important;
     max-width: 100% !important;
     overflow-x: auto;
+    margin-top: 32px !important; /* 표 위쪽 여백 확대 */
+    margin-bottom: 32px !important; /* 표 아래쪽 여백 확대 */
 }
 .notion-simple-table {
     width: 100% !important;
@@ -83,40 +85,47 @@ h1, h2, h3, h4, h5, h6, .notion-title {
     padding: 14px 16px !important;
 }
 
-/* 2. 인용구(Quote) 세로줄을 맑은 민트색으로 변경 */
+/* 2. 인용구(Quote) 세로줄: 맑은 민트색(#43ACB6) */
 .notion-quote {
-    border-left: 4px solid #43ACB6 !important; /* 스틸플로우 뮤티드 틸(민트) */
+    border-left: 4px solid #43ACB6 !important; 
     padding: 16px 24px !important;
-    font-style: italic; /* 감성적인 인터뷰 느낌 부여 */
-    color: #4A5568 !important; /* 부드러운 차콜 그레이 텍스트 */
-    background-color: transparent !important; /* 인용구 배경은 맑게 투명 처리 */
+    font-style: italic; 
+    color: #4A5568 !important; 
+    background-color: transparent !important; 
+    margin-top: 24px !important;
+    margin-bottom: 24px !important;
 }
 
-/* 3. 콜아웃(Callout) 상자를 아주 옅은 쿨 블루(Base 1) 요약 카드로 변환 */
+/* 3. 콜아웃(Callout) 상자: 더 옅고 맑은 블루 미색(#F4F8FA) */
 .notion-callout {
-    background-color: #EDF2F7 !important; /* 스틸플로우 소프트 쿨 미색(아주 옅은 블루) */
-    border: 1px solid #E2E8F0 !important; /* 경계선 다듬기 */
-    border-radius: 12px !important; /* 다정하고 둥근 모서리 */
-    padding: 20px 24px !important;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02) !important; /* 미세한 입체감 */
+    background-color: #F4F8FA !important; /* 기존보다 훨씬 옅고 맑은 쿨 미색 */
+    border: 1px solid #E2E8F0 !important; 
+    border-radius: 12px !important; 
+    padding: 24px 28px !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02) !important; 
+    margin-top: 32px !important;
+    margin-bottom: 32px !important;
 }
 
-/* 4. 소제목(H2, H3, H4)을 딥블루(루미너스 블루)로 강조 */
+/* 4. 소제목(H2, H3, H4): 딥블루 강조 & 위아래 여백 대폭 확대 */
 h2, h3, h4, .notion-h2, .notion-h3, .notion-h4 {
-    color: #1E3A8A !important; /* 스틸플로우 루미너스 블루 */
+    color: #1E3A8A !important; 
+    margin-top: 48px !important; /* 소제목 위쪽 여백 아주 시원하게 */
+    margin-bottom: 20px !important; /* 소제목 아래 본문과의 간격 */
 }
 
-/* 5. 본문 줄간격 및 가독성 최적화 (너비 제한 제거) */
+/* 5. 본문 줄간격 1.6 & 단락(P) 사이 여백 확대 */
 .notion-text, .notion-list, .notion-callout-text {
-    line-height: 1.8 !important; /* 긴 글도 숨통이 트이는 넉넉한 줄간격 */
-    color: #2D3748 !important; /* 시각적 피로를 줄이는 슬레이트 다크 */
+    line-height: 1.6 !important; /* 본관과 동일한 1.6 줄간격 */
+    color: #2D3748 !important; 
+    margin-bottom: 18px !important; /* 엔터 쳤을 때 단락 사이 기본 여백 확대 */
 }
 
-/* 6. 갤러리 카드 호버(Hover) 효과 - 마우스를 올리면 부드럽게 위로 떠오름 */
+/* 6. 갤러리 카드 호버(Hover) 효과 */
 .notion-collection-card {
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important; /* 부드러운 전환 효과 */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out !important; 
 }
 .notion-collection-card:hover {
-    transform: translateY(-4px) !important; /* 위로 4px 부양 */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important; /* 그림자 깊이감 추가 */
+    transform: translateY(-4px) !important; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important; 
 }
